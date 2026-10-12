@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CameraGuard</string>
+    <string name="permission_rationale">CameraGuard needs camera access to detect and blur sensitive or minor-face content in real time. Nothing is uploaded or stored unless you explicitly save a (protected) photo.</string>
+    <string name="grant_permission">Grant Camera Permission</string>
+    <string name="status_scanning">Scanning…</string>
+    <string name="status_protected">Protected — sensitive/minor content blurred</string>
+    <string name="status_clear">Clear</string>
+    <string name="capture_button_desc">Take photo</string>
+    <string name="toggle_face_blur">Blur minor faces</string>
+    <string name="toggle_nsfw_blur">Blur sensitive content</string>
+    <string name="photo_saved">Photo saved</string>
+    <string name="photo_save_failed">Could not save photo</string>
+    <string name="permission_denied_toast">Camera permission is required to use CameraGuard</string>
+</resources>

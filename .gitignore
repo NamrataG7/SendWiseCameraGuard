@@ -1,0 +1,81 @@
+# ============================================================================
+# SendWise .gitignore
+# ============================================================================
+
+# ---- OS / Editor -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# ---- Secrets (never commit) ------------------------------------------------
+.env
+.env.local
+.env.*.local
+!.env.example
+*.pem
+*.key
+*.p12
+*.keystore
+!SafeKeyboardApp/debug.keystore
+
+# ---- Node / Next.js --------------------------------------------------------
+node_modules/
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+.vercel/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ---- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg
+
+# ---- Model training intermediates ------------------------------------------
+# NOTE: We DO commit the exported gz-JSON models (in SafeKeyboardApp/app/src/main/assets/models/)
+#       and the training report + MODEL_CARD.json (reproducibility).
+#       We do NOT commit sklearn .pkl artifacts (large, regenerable).
+model_training/artifacts/*.pkl
+model_training/artifacts/*.joblib
+
+# ---- Android / Gradle ------------------------------------------------------
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+local.properties
+.gradle/
+SafeKeyboardApp/**/build/
+SafeKeyboardApp/**/.cxx/
+SafeKeyboardApp/captures/
+SafeKeyboardApp/.externalNativeBuild/
+
+# ---- Logs / temp -----------------------------------------------------------
+*.log
+tmp/
+.tmp/
+coverage/
+.nyc_output/

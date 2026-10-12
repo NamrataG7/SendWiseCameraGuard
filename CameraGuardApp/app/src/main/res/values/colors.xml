@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="guard_primary">#6C4AB6</color>
+    <color name="guard_primary_dark">#4B2E83</color>
+    <color name="guard_accent">#FF6584</color>
+    <color name="guard_overlay_warning">#E63946</color>
+    <color name="guard_background">#121018</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
